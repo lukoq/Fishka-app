@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.fishka.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_study"
+        android:name="com.example.fishka.ui.study.StudyFragment"
+        android:label="@string/menu_study"
+        tools:layout="@layout/fragment_study">
+        <action
+            android:id="@+id/action_nav_study_to_scoreFragment"
+            app:destination="@id/scoreFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.fishka.ui.add.AddFragment"
+        android:label="Add flashcard"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/action_addFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.fishka.ui.update.UpdateFragment"
+        android:label="Update"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+        <argument
+            android:name="customConcept"
+            app:argType="com.example.fishka.model.Concept" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.example.fishka.ui.score.ScoreFragment"
+        android:label="Score"
+        tools:layout="@layout/fragment_score" >
+
+        <action
+            android:id="@+id/action_scoreFragment_to_nav_study"
+            app:destination="@id/nav_study" />
+        <argument
+            android:name="ConceptListSize"
+            app:argType="integer" />
+    </fragment>
+</navigation>

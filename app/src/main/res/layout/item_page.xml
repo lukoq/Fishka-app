@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_back"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:text="Back side of the flashcard"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="48sp"
+        android:background="@drawable/flashcard_background"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/title_front"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/flashcard_background"
+        android:gravity="center"
+        android:text="Front side of the flashcard"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textColor="@color/gray"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_soft">#1AAA6FFF</color>
+    <color name="soft_cyan">#69D2E7</color>
+    <color name="blue">#27BEDC</color>
+    <color name="violet">#AA6FFF</color>
+    <color name="soft_violet">#C39AFF</color>
+    <color name="gray_blue">#306A9E</color>
+    <color name="soft_gray_blue">#6E96BB</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#E06666</color>
+    <color name="green">#93C47D</color>
+    <color name="gray">#5A5A5A</color>
+</resources>
